@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int w, h;
 char e, o, f;
 
@@ -24,6 +25,7 @@ void free_map(int **map) {
 	free(map);
 }
 
+// In the exam there was more things that I checked like the line lenght for evey line...
 void get_map(FILE *file) {
 
 	char newline;
@@ -97,6 +99,7 @@ int main(int ac, char **av) {
 			}
 		}
 	}
+
 	for (int y = 0; y < h; y++) {
 		for (int x = 0; x < w; x++) {
 			if (x > mx - mm && x <= mx && y > my - mm && y <= my) {
